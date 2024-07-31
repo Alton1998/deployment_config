@@ -14,8 +14,8 @@ services:
       VECTOR_SEARCH_INDEX: medical_info_index
       BATCH_SIZE: 5
       LLM_MODEL_PATH: /code/llm/openbiollm-llama3-8b.Q5_K_M.gguf
-      LLM_MODEL_TEMPERATURE: 0.2
-      LLM_MODEL_TOP_P: 1
+      LLM_MODEL_TEMPERATURE: 1.0
+      LLM_MODEL_TOP_P: 1.0
       LLM_MODEL_MAX_TOKENS: 2000
       LOG_LEVEL: DEBUG
       EMBEDDING_MODEL_PATH: /code/llm/embedder
