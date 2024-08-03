@@ -1,6 +1,6 @@
 services:
   llm:
-    image: cyberhead1998/llm:cpu-1
+    image: cyberhead1998/llm:cpu-2
     ports:
       - "8000:8000"
     environment:
@@ -19,6 +19,8 @@ services:
       LLM_MODEL_MAX_TOKENS: 2000
       LOG_LEVEL: DEBUG
       EMBEDDING_MODEL_PATH: /code/llm/embedder
+      PATIENT_KNOWLEDGE_COLLECTION: patient_encounter_embeddings
+      PATIENT_INFO_INDEX_NAME: patient_info_index
 #    deploy:
 #      resources:
 #        reservations:
