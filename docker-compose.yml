@@ -1,6 +1,6 @@
 services:
   llm:
-    image: cyberhead1998/llm:cpu-2
+    image: cyberhead1998/llm:cpu-3
     ports:
       - "8000:8000"
     environment:
